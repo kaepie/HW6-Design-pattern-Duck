@@ -18,20 +18,13 @@ public class DuckSimulator {
         System.out.println("\nDuck Simulator");
 
         Flock flock1 = new Flock();
-        flock1.add(duckCall);
+        flock1.add(mallardDuck);
         flock1.add(rubberDuck);
         flock1.add(gooseDuck);
 
         flock1.quack();
 
         System.out.println("--------");
-        System.out.println(QuackCounter.getNumOfQuacks() + " times");
-
-        simulate(mallardDuck);
-        simulate(redheadDuck);
-        simulate(duckCall);
-        simulate(rubberDuck);
-        simulate(gooseDuck);
         System.out.println(QuackCounter.getNumOfQuacks() + " times");
     }
 

@@ -13,8 +13,17 @@ public class Flock implements Quackable{
 
     @Override
     public void quack() {
-        for(Quackable q : quackers){
-            q.quack();
+        if (!quackers.isEmpty())
+        {
+            for (int i = 0 ;i < 3;i++) {
+                quackers.getFirst().quack();
+            }
+            quackers.removeFirst();
+            if(!quackers.isEmpty()) {
+                for (Quackable q : quackers) {
+                    q.quack();
+                }
+            }
         }
     }
 }
