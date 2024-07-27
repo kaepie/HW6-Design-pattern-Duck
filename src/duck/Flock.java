@@ -17,11 +17,13 @@ public class Flock implements Quackable{
         {
             for (int i = 0 ;i < 3;i++) {
                 quackers.getFirst().quack();
+                System.out.println();
             }
             quackers.removeFirst();
             if(!quackers.isEmpty()) {
                 for (Quackable q : quackers) {
                     q.quack();
+                    System.out.println();
                 }
             }
         }
