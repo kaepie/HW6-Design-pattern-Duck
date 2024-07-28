@@ -1,3 +1,4 @@
+//6510450291 Chutipong Triyasith
 package duck;
 
 public class PoliteCounter implements Quackable{

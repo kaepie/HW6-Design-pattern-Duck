@@ -1,3 +1,4 @@
+//6510450291 Chutipong Triyasith
 package duck;
 
 import java.util.Random;
